@@ -1,4 +1,4 @@
-package modelos;
+package br.com.ucpel.pi3.b.gerenciadoDoacaoIMDAZ.domain;
 
 public class Usuario {
     private Long id;

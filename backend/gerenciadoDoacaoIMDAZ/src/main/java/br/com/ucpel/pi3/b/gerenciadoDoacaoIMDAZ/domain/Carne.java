@@ -1,17 +1,18 @@
-package modelos;
+package br.com.ucpel.pi3.b.gerenciadoDoacaoIMDAZ.domain;
 
-import java.text.DecimalFormat;
+
+import java.math.BigDecimal;
 
 public class Carne {
     private Long id;
-    private DecimalFormat valor;
+    private BigDecimal valor;
     private int diaVencimento;
 
-    public DecimalFormat getValor() {
+    public BigDecimal getValor() {
         return valor;
     }
 
-    public void setValor(DecimalFormat valor) {
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 

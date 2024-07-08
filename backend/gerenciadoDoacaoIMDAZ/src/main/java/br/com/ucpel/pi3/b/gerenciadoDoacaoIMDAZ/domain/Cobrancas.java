@@ -1,4 +1,4 @@
-package modelos;
+package br.com.ucpel.pi3.b.gerenciadoDoacaoIMDAZ.domain;
 
 import java.util.Date;
 
