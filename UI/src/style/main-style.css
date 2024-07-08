@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #a0deff;
+  font-family: "Gill Sans", sans-serif;
+}
+main {
+  max-width: 40rem;
+
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template: 1fr;
+  justify-items: center;
+}
+img {
+  width: 10rem;
+}
+
+.main-content p {
+  text-align: center;
+}
+
+.title,
+.text-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.content {
+  margin: auto;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.group-button {
+  display: grid;
+  gap: 1rem;
+}
+.button {
+  width: 70vw;
+  min-width: 15rem;
+  max-width: 20rem;
+  max-height: 5.5rem;
+  font-size: 1.2rem;
+  border: 0.15rem solid black;
+  background-color: lightgray;
+  display: grid;
+  grid-template: 1fr;
+  border-radius: 1rem;
+}
+
+.button p {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0;
+}
