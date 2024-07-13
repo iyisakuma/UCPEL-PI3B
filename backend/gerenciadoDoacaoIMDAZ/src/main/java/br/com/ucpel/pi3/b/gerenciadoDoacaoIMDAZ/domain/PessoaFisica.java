@@ -1,24 +1,11 @@
 package br.com.ucpel.pi3.b.gerenciadoDoacaoIMDAZ.domain;
 
-import java.util.Date;
+import lombok.Data;
 
+import java.time.LocalDate;
+
+@Data
 public class PessoaFisica extends Pessoa{
     private String cpf;
-    private Date dtNascimento;
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public Date getDtNascimento() {
-        return dtNascimento;
-    }
-
-    public void setDtNascimento(Date dtNascimento) {
-        this.dtNascimento = dtNascimento;
-    }
+    private LocalDate dtNascimento;
 }

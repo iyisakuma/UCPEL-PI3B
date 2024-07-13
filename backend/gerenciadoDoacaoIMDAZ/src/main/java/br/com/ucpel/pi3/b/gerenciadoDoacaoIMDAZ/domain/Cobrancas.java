@@ -1,25 +1,21 @@
 package br.com.ucpel.pi3.b.gerenciadoDoacaoIMDAZ.domain;
 
-import java.util.Date;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Cobrancas {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Date vencimento;
-    private Date parcela;
+    private LocalDate vencimento;
+    private int parcela;
 
-    public Date getParcela() {
-        return parcela;
-    }
-
-    public void setParcela(Date parcela) {
-        this.parcela = parcela;
-    }
-
-    public Date getVencimento() {
-        return vencimento;
-    }
-
-    public void setVencimento(Date vencimento) {
-        this.vencimento = vencimento;
-    }
 }
