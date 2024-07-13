@@ -10,9 +10,7 @@ import java.util.Set;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@Data
 @NoArgsConstructor
-@Getter
 public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,6 +23,52 @@ public class Pessoa {
     @OneToOne
     private Usuario usuario;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Set<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(Set<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }
 
