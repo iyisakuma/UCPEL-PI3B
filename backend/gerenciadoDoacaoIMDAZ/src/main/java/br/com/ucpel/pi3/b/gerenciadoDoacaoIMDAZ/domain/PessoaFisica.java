@@ -5,9 +5,24 @@ import lombok.Data;
 
 import java.time.LocalDate;
 
-@Data
 @Entity
 public class PessoaFisica extends Pessoa{
     private String cpf;
     private LocalDate dtNascimento;
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public LocalDate getDtNascimento() {
+        return dtNascimento;
+    }
+
+    public void setDtNascimento(LocalDate dtNascimento) {
+        this.dtNascimento = dtNascimento;
+    }
 }
