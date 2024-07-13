@@ -11,6 +11,6 @@ public class AutenticacaoService {
     private PessoaRepository pessoaRepository;
     public boolean valida(String email, String senha) {
         Pessoa p = pessoaRepository.findByEmail(email);
-        p.
+        return p.getEmail().equals(senha);
     }
 }
