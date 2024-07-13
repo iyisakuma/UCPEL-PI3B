@@ -18,10 +18,7 @@ public class PessoaController {
     @PostMapping("/pessoaFisica")
     public String cadastraPessoaFisica(@RequestBody PessoaFisicaDTO pessoaDTO){
         try{
-            var pessoa = new PessoaFisica();
-            pessoa.setCpf(pessoaDTO.cpf());
-            pessoa.setNome(pessoaDTO.nome());
-            pessoa = (PessoaFisica) pessoaService.cadastraPessoaFisica(pessoa);
+            var pessoa = (PessoaFisica) pessoaService.cadastraPessoaFisica(pessoaDTO);
             return "Cadastro com sucesso!" + pessoa.getId();
         }catch (Exception ex){
             return "Não foi possivel cadastrar a pessoa fisica";
