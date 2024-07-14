@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Usuário</title>
+    <link rel="stylesheet" href="../src/style/cadastro_usuario.css" />
+    <script src="./script/cadastro.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <button class="back-button"><a href="./index.html">&#8592;</a></button>
+        <h1>Novo Usuário</h1>
+      </div>
+      <form>
+        <h2>Cadastre suas credenciais</h2>
+
+        <label for="nome">Como podemos te chamar?</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Insira seu nome"
+        />
+
+        <label for="email">Qual seu email?</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Insira um email"
+        />
+
+        <label for="senha">Qual sua senha?</label>
+        <div class="input-container">
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Insira sua senha"
+          />
+          <button type="button" class="password-button">&#128274;</button>
+        </div>
+
+        <label for="confirma-senha">Confirme sua senha</label>
+        <div class="input-container">
+          <input
+            type="password"
+            id="confirma-senha"
+            name="confirma-senha"
+            placeholder="Confirme sua senha"
+          />
+          <button type="button" class="password-button">&#128274;</button>
+        </div>
+
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="tipo" value="pf" checked required />
+            Pessoa Física
+          </label>
+          <label>
+            <input type="radio" name="tipo" value="pj" />
+            Pessoa Jurídica
+          </label>
+        </div>
+        <button id="btSubmit" onclick="salvaUsuario()">Próximo</button>
+      </form>
+    </div>
+  </body>
+</html>

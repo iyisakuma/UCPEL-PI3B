@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>IMDAZ :: Doações</title>
-    <link rel="stylesheet" href="style/main-style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login-style.css" />
   </head>
   <body>
-    <main>
-      <a href=""><img src="../img/return.png" alt="retornar" /></a>
-
-      <p class="title">Bem-Vindo de volta</p>
-
-      <img src="../img/logo-imdaz.png" alt="" id="logo" />
-
-      <div>
-        <p class="label">Email</p>
-        <input type="text" placeholder="Entre com seu Email" />
+    <div class="container">
+      <div class="header">
+        <button class="back-button">
+          <a style="text-decoration: none" href="./index.html">&#8592;</a>
+        </button>
+        <h1>Bem-vindo de volta</h1>
       </div>
-
-      <div>
-        <p class="label">Senha</p>
-        <div>
-          <input type="password" placeholder="Digite sua senha" />
-          <button><img src="../img/secured-lock.png" alt="" /></button>
+      <form>
+        <div class="image-container">
+          <img src="../img/logo-imdaz.png" alt="Imagem de boas-vindas" />
         </div>
 
-        <p class="recupera-senha">Esquece sua senha?</p>
-      </div>
-      <a href="" class="button"><p>Entrar</p> </a>
-    </main>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Entre com seu email"
+          required
+        />
+
+        <label for="senha">Senha</label>
+        <div class="input-container">
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha"
+            required
+          />
+          <button type="button" class="password-button">&#128274;</button>
+        </div>
+
+        <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,24 +1,5 @@
-* {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  background-color: #a0deff;
-  font-family: "Gill Sans", sans-serif;
-}
 main {
-  max-width: 40rem;
-
-  width: 100vw;
-  height: 90vh;
-  display: grid;
-  grid-template: 1fr;
-  justify-items: center;
+  background-color: #a0deff;
 }
 img {
   width: 10rem;

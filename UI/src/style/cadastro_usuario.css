@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #e0f7fa;
 }
 
 .container {
@@ -33,22 +33,16 @@ body {
 h1 {
   font-size: 24px;
   margin: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.image-container {
-  margin: 20px 0;
-}
-
-.image-container img {
-  width: 100px;
-  height: auto;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
 }
 
 label {
@@ -77,18 +71,13 @@ input {
   cursor: pointer;
 }
 
-.forgot-password {
+.radio-group {
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-  font-size: 14px;
 }
 
-.forgot-password:hover {
-  text-decoration: underline;
-}
-
-button[type="submit"] {
+button {
   margin-top: 20px;
   padding: 10px;
   border: none;

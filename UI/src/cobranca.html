@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal do Colaborador - Nova Doação</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+      }
+      .container {
+        width: 375px;
+        height: 812px;
+        background-color: #b3e5fc;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .container img {
+        width: 100px;
+        margin-top: 20px;
+      }
+      h1 {
+        color: #00796b;
+        margin: 10px 0;
+        font-size: 20px;
+        text-align: center;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      form input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #00796b;
+        border-radius: 5px;
+      }
+      form p {
+        color: red;
+        text-align: center;
+        margin: 10px 20px;
+        font-size: 14px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+      }
+      .buttons button {
+        background-color: #ffffff;
+        border: 2px solid #00796b;
+        color: #00796b;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 45%;
+      }
+      .buttons button:hover {
+        background-color: #00796b;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../img/logo-imdaz.png" alt="Imagem de boas-vindas" />
+      <h1>Portal do Colaborador</h1>
+      <form>
+        <h2>Quero fazer uma nova doação</h2>
+        <label for="dia-vencimento">Dia de vencimento</label>
+        <input
+          type="number"
+          id="dia-vencimento"
+          name="dia-vencimento"
+          value="1"
+        />
+        <label for="valor-contribuicao">Valor para contribuição</label>
+        <input
+          type="number"
+          id="valor-contribuicao"
+          name="valor-contribuicao"
+          value="1.00"
+        />
+        <p>
+          O Carnê do Contribuinte, surgiu como forma de incentivar, facilitar e
+          valorizar as mãos que nos ajudam, para isso resolvemos adotar a
+          modalidade anual em forma de boletos mensais. Você escolhe o valor, e
+          o dia de sua preferência, e nós confeccionamos os carnês e enviamos
+          pelo email. E assim as suas mãos, nos ajudam a transformar muitas
+          vidas.
+        </p>
+        <div class="buttons">
+          <button type="button">Cancelar</button>
+          <button type="submit">Confirmar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

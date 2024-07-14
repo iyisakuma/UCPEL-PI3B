@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Gill Sans", sans-serif;
+}
+
+main {
+  max-width: 40rem;
+
+  margin: auto;
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template: 1fr;
+  justify-items: center;
+}
+
+.main-content p {
+  text-align: center;
+}
