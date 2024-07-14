@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro PF</title>
     <link rel="stylesheet" href="./style/style-cpf.css" />
-    <script src="/src/script/cadastro.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="form-header">Cadastro</div>
       <form>
-        <p>Falta pouco Fulano, apenas mais algumas informações...</p>
+        <p>
+          Falta pouco <span id="nomePessoa">Fulano</span>, apenas mais algumas
+          informações...
+        </p>
         <label for="cpf">CPF</label>
         <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" />
 
@@ -39,6 +41,14 @@
         <input type="text" id="complemento" name="complemento" />
       </form>
       <button onclick="enviaServidor()">Finaliza</button>
+      <script src="/src/script/cadastro.js">
+
+        let nomePessoa = document.querySelector("#nomePessoa");
+        if (nomePessoa != null) {
+          let nome = localStorage.getItem("nome");
+          nomePessoa.textContent = nome;
+        }
+      </script>
     </div>
   </body>
 </html>
