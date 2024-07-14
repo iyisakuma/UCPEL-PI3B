@@ -21,11 +21,12 @@ public class PessoaService {
         var pessoa = new PessoaFisica();
         pessoa.setCpf(pessoaDTO.cpf());
         pessoa.setNome(pessoaDTO.nome());
+        pessoa.setEmail(pessoaDTO.email());
         pessoa = repository.save(pessoa);
         Usuario usuario = new Usuario();
         usuario.setSenha(pessoaDTO.senha());
         usuario = usuarioRepository.save(usuario);
         pessoa.setUsuario(usuario);
-        return (PessoaFisica) repository.save(usuario);
+        return repository.save(pessoa);
     }
 }

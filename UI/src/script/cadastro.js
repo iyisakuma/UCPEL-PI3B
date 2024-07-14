@@ -29,17 +29,28 @@ function enviaServidor() {
   let logradouro = document.querySelector("#logradouro").value;
   let complemento = document.querySelector("#complemento").value;
 
-  let pessoa = {
-    nome: nome,
-    email: email,
-    senha: senha,
-    cpf: cpf,
-    dataNascimento: dataNascimento,
-    telefone: telefone,
-    cep: cep,
-    uf: uf,
-    logradouro: logradouro,
-    complemento: complemento,
-  };
-  console.log(pessoa);
+  fetch("http://192.168.8.168:8080/pessoa", {
+    body: JSON.stringify({
+      nome: nome,
+      email: email,
+      senha: senha,
+      cpf: cpf,
+      dataNascimento: dataNascimento,
+      telefone: telefone,
+      cep: cep,
+      uf: uf,
+      logradouro: logradouro,
+      complemento: complemento,
+    }),
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+  })
+    .then((T) => T.json())
+    .then((json) => {
+      localStorage.setItem("id", json.id);
+      window.location.href = "./cobranca.html";
+    });
 }

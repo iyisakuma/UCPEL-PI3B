@@ -97,7 +97,7 @@
           type="number"
           id="valor-contribuicao"
           name="valor-contribuicao"
-          value="1.00"
+          value="0.00"
         />
         <p>
           O Carnê do Contribuinte, surgiu como forma de incentivar, facilitar e
@@ -107,11 +107,14 @@
           pelo email. E assim as suas mãos, nos ajudam a transformar muitas
           vidas.
         </p>
-        <div class="buttons">
-          <button type="button">Cancelar</button>
-          <button type="submit">Confirmar</button>
-        </div>
       </form>
+      <div class="buttons">
+        <button type="button" onclick="limpa()">Cancelar</button>
+        <button type="button" onclick="gera()">Confirmar</button>
+      </div>
     </div>
+    <input type="hidden" id="id" name="id" value="-1" />
+
+    <script src="./script/gera-cobranca.js"></script>
   </body>
 </html>
